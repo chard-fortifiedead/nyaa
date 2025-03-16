@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bayaning 3rd World</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('3rd world.webp') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden; /* Prevents unnecessary scrolling */
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background: #333;
+    color: white;
+    padding: 20px;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    background: #444;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.sidebar ul li a:hover {
+    background: #555;
+}
+
+/* Content Section */
+/* Keep Carousel Fixed but Smaller */
+.carousel-container {
+    width: 100%;
+    max-width: 80%;
+    height: auto;
+    position: relative; /* No longer fixed */
+    margin: 20px auto; /* Adds spacing */
+    text-align: center; /* Centers the carousel */
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+    max-height: 300px; /* Limits image size to prevent overlap */
+    object-fit: contain; /* Ensures proper aspect ratio */
+    display: none;
+}
+
+.carousel img.active {
+    display: block;
+}
+
+/* Content Section Fix */
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    backdrop-filter: blur(5px);
+    text-align: left;
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 20px;
+    overflow-y: auto;
+    max-height: 100vh;
+    width: 100%;
+}
+
+/* Section Fix */
+.section {
+    display: none;
+    width: 100%;
+    max-width: 90%;
+    padding: 20px;
+    text-align: left;
+    overflow-y: auto;
+    max-height: 70vh; /* Adjusted so content doesn’t go under the carousel */
+}
+
+.section.active {
+    display: block;
+}
+
+/* Scrollbar Customization */
+.content::-webkit-scrollbar,
+.section::-webkit-scrollbar {
+    width: 8px;
+}
+
+.content::-webkit-scrollbar-thumb,
+.section::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+.content::-webkit-scrollbar-track,
+.section::-webkit-scrollbar-track {
+    background-color: #333;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+          <nav class="sidebar">
+              <ul>
+                  <li><a href="#" onclick="showContent('summary')">Summary</a></li>
+                  <li><a href="#" onclick="showContent('warren')">Chard Warren C. Reyes</a></li>
+                  <li><a href="#" onclick="showContent('member1')">Mark Cyrus Miguel Dela Cruz</a></li>
+                  <li><a href="#" onclick="showContent('member2')">Norolayn Pagsidan</a></li>
+                  <li><a href="#" onclick="showContent('member3')">JhonFuole Maneje</a></li>
+              </ul>
+          </nav>
+          <div class="content">
+              <div id="summary" class="section active">
+                <div class="carousel-container">
+                  <div class="carousel">
+                      <img src="active.png" class="carousel-item active">
+                      <img src="2nd.png" class="carousel-item">
+                      <img src="3rd.png" class="carousel-item">
+                      <img src="4th.png" class="carousel-item">
+                  </div>
+              </div>
+                  <h1>Summary of Bayaning Third World</h1>
+                  <p>Bayaning 3rd World (2000) is a thought-provoking Filipino film directed by Mike de Leon that explores the life, legacy, and myths surrounding Dr. José Rizal, the national hero of the Philippines. Rather than presenting a conventional biopic, the film takes a unique, metafictional approach, following two contemporary filmmakers who are attempting to create a movie about Rizal. As they delve deeper into his life, they struggle with conflicting historical accounts, particularly regarding Rizal’s alleged retraction of his anti-Catholic writings before his execution in 1896.</p>
+
+                    <p>Through a mix of investigative storytelling, dramatized interviews, and creative reenactments, the film examines Rizal’s relationships, ideologies, and the political implications of his status as a national hero. One of the key points of contention is Rizal’s relationship with Josephine Bracken and whether he truly married her before his death. The film also presents conversations with fictionalized versions of Rizal, his family members, and historical figures to dissect the complexities of his character.</p>
+                    
+                    <p>Instead of providing clear-cut answers, Bayaning 3rd World challenges viewers to critically analyze how history is written and remembered. It questions the process of mythmaking and how Rizal’s image has been shaped to fit different political and cultural narratives. The film ultimately suggests that the truth about Rizal—and by extension, history itself—remains elusive, leaving the audience to reflect on the nature of heroism and national identity.</p>
+              </div>
+              <div id="warren" class="section">
+                  <h2>Chard Warren C. Reyes</h2>
+                  <p>1. The filmmakers struggled because there are many stories that has spread across the country, finding it difficult to film the whole real story They realized that he's starting to be a myth instead of being a legend, making it hard to separate. This was because other people treated him as a religious character, worshipping him, and creating a cult of him. They even tried exploring the ideas of the long and gone Rizal vs. Bonifacio, Rizal vs. Contemplacion and even thought of Rizal as a commercial figure(like a deodorant commercial, shown in the movie). It was all confusing that in the end, they started to make this a mystery type of movie, investigating all the questionable issues about Rizal, including his retraction, relationship with Josephine Bracken and his heroism. (9:33-13:10)</p>
+                  <p>2. The Retraction document became a controversy due to some issues of whether this is true or false. However, this argument leads to some validity due to his signature being questionable even though the text is genuine. Apart from this, even the filmmakers thought this was also fake. This text was even found by a Spanish priest, who claimed that that is the Retraction text, but still raised some doubts (44:40, 46:00, 57:25)</p>
+                  <p>3. Josephine Bracken was portayed to be a childish, sentimental, and stupid, but after Rizal's death, her stupidity actions became doubtful. Though back in the time Rizal wanted to marry her, it cannot happen since Rizal's relationship with the Catholic is still not good so they don't allow their marriage. But, they still lived, and had a baby.(15:30, 39:05, 40:00)</p>
+                  <p>4. Some of the evidence that supports that Rizal really retracted are that there is a priest that has seen Rizal signed the retraction, confessed to his sins, kneeled together with the friars, holding his retraction and has returned to the Catholic Church. However, this statements came from the Church which was then still held by Spaniards which raised doubts about the credibility of the statements given. About the one that supports that this isn't true was when the filmmakers was brain storming if the signature was real or not, which led into a conclusion that it wasn't Rizal's signature, as his signature was easy to copy. Another evidence is that a Spanish priest has seen the text, which still remains doubtful. So, in conclusion, the issue of the retraction is still remained unanswered. (1:12:30-1:12:35, 44:40, 46:00, 57:25)</p>
+                  <p>5. The film represented different portrayals of Rizal's death: one of which they showed his original death, dying with the bullets. But the filmmakers tried to poke fun of it and imagined of what will happen if Rizal's just run away if he knows that his death will cause chaos and confusion around the world. (5:46)</p>
+                  <p>6. One of the filmmakers thought Rizal really didn't wanted to be the hero and wanted to be not known, cause he wrote in Noli me Tangere that he wished that he didn't wrote the novel, but rather let it be burned into nothing, though he never did. So if he really turned his back on his writings, the filmmaker thought he chickened to the minute he knew that he'll die. The filmmakers even mentioned Rizal's readiness to be a martyr, ready to die for what is right, but then suddenly backed away, probably because of Josephine. That is why they called him a "Bayaning 3rd World"(1:02:30-1:04:25)</p>
+                  <p>7. The film replicated his relationship with the Catholic Church was never good. But after hearing statements from people close to him and from the friars, the filmmakers created a speculation that Rizal had died coming back to Catholic. This also raised questions like did he die being a Catholic, or did he die still clinging to his belief(1:05:45- 1:15:45)</p>
+                  <p>8. </p>
+                  <p>Content for Warren...</p>
+                  <p>Content for Warren...</p>
+              </div>
+              <div id="member1" class="section">
+                  <h2>Mark Cyrus Miguel Dela Cruz</h2>
+                  <p>1. The filmmakers struggle because they feel Rizal’s life isn’t exciting enough for a movie. They say his life is mostly about traveling, writing, and then his death. They worry that there isn’t enough drama or action to keep people interested. They also realize that because Rizal is seen as a national hero, his story has been told so many times making it hard to show something new or real about him. (Timestamp 9:58)</p>
+                  <p>2. The retraction document is controversial because it’s supposed to show that Rizal took back his criticisms of the Catholic Church and agreed with their teachings before his death. But there’s a lot of debate about whether it’s real or fake:
+
+                    One of the filmmakers said that the text of the document is genuine, but Rizal’s signature on it looks questionable. (Timestamp 44:43)
+                    
+                    The other filmmaker believes the entire document is fake. (Timestamp 46:05)
+                    
+                    There’s also a Spanish priest who claimed to have found the document, but even that raises doubts. (Timestamp 57:34)
+                    This back-and-forth shows how unclear the truth is and how Rizal’s final beliefs remain a mystery.</p>
+                  <p>3. The film shows Josephine Bracken through the opinions of other people. Some describe her in a negative light, while others see her as someone who truly loved Rizal. (Timestamp 15:29)
+                    Josephine explains that Rizal wanted to marry her, but there was a problem Rizal wasn’t a Catholic in good standing, so the Church wouldn’t allow them to marry. (Timestamp 39:07, 40:31)
+                    Despite not being officially married, they lived together and had a child. Sadly, their child died. (Timestamp 40:10)</p>
+                  <p>4. The evidence mainly comes from the accounts of the Spanish priests who were present.
+
+                    A priest claimed that Rizal signed the retraction and returned to the Catholic Church. (Timestamp 1:12:23)
+                    
+                    It’s also said that Rizal confessed his sins twice, which was seen as proof of his return to the faith. (Timestamp 1:12:35)
+                    But since this evidence comes only from the Church’s side, there’s still doubt about whether it’s true or just a way to shape Rizal’s image.</p>
+                  <p>5. The film shows Rizal’s execution in different ways some serious, some almost carton-like. (Timestamp 5:15)
+                    In one version, Rizal is shot in the back, following the historical account. But one of the filmmakers jokes that Rizal should have just run away instead of being shot suggesting how strange it is that Rizal calmly faced death when he could have tried to escape. (Timestamp 5:46)
+                    This difference shows how Rizal’s death has become a mix of real history and the almost legendary way people see him now. It also suggests that his death turned him into a figure people admire like a saint. (Timestamp 9:10)</p>
+                  <p>6. Some question Rizal’s heroism because, unlike other revolutionaries, Rizal didn’t fight with weapons or lead soldiers into battle. Instead, he fought with his words and ideas.
+                    The filmmakers wonder if his peaceful approach really made a difference or if it made him less of a hero compared to those who fought and died in the revolution. They ask if Rizal’s decision to stay away from violence was bravery or hesitation. This debate challenges the idea of what a hero truly is — someone who fights with action or someone who fights with ideas.(Timestamp 1:05:47)</p>
+                  <p>7. The film shows that Rizal had a complicated relationship with the Catholic Church. He criticized how the Church abused its power and controlled people, which is clear in his writings. Despite this, Rizal still had personal faith in God.
+                    Before his execution, Rizal was seen praying and receiving the last sacraments of the Church. (Timestamp 1:04:54) This shows that even though he disagreed with the institution of the Church, his belief in God remained strong.</p>
+                  <p>8. The film’s approach makes Rizal’s story feel more alive and personal. By having imaginary conversations with Rizal, the filmmakers explore his thoughts and feelings in a way historical documents can’t. (Timestamp 1:23:38)
+                    This technique also allows the audience to see different versions of Rizal — the writer, the lover, the revolutionary — and question what kind of person he really was. It brings out the struggle of trying to understand someone who has become larger than life.</p>
+                  <p>9. The filmmakers get frustrated because Rizal’s life, despite being important, feels repetitive and hard to make into an interesting film. They complain that his story is mostly about traveling, writing, and then being executed. (Timestamp 1:28:21)
+                    They’re also overwhelmed by the many speculations and conflicting accounts about his life. (Timestamp 1:25:28) It’s difficult to separate fact from myth, and this makes it hard for them to present a clear and true version of Rizal.
+                    </p>
+                  <p>10. The film suggests that Rizal’s legacy is still debated and misunderstood. Some see him as a perfect hero, while others question his decisions and beliefs. But what stands out is his influence his writings sparked ideas of freedom and revolution that shaped the Philippines.
+                    Even with all the questions about his life, Rizal’s impact on Filipino identity and national pride is undeniable. His story continues to inspire discussions about what it means to be a hero and how one person’s ideas can change a nation. (Timestamp 1:27:02)</p>
+              </div>
+              <div id="member2" class="section">
+                  <h2>Norolayn Pagsidan</h2>
+                  <p>1. Based on what I’ve watched, the filmmakers faced several challenges in making their 
+                    movie. Their main concern was how to make their film about Rizal stand out from other 
+                    adaptations. They explored different ideas, such as a film about Rizal vs. Andres 
+                    Bonifacio, a story focused on Bonifacio alone, a Rizal vs. Flor Contemplacion concept, 
+                    and even a commercial-style approach about Rizal. In the end, they decided to take a 
+                    unique route by turning it into a detective-style investigation about Rizal’s life and the 
+                    controversy surrounding his retraction. Personally, I liked this approach because I 
+                    enjoy mystery movies.
+                    9:33- 13:00</p>
+                  <p>2. The main debate about Rizal’s retraction centers on whether he truly took back his 
+                    anti-Catholic beliefs before his execution. Some argue that the text of the retraction 
+                    is genuine, but the authenticity of Rizal’s signature remains doubtful. Others believe
+                    that the document was fabricated by the Church as propaganda to protect its image 
+                    and downplay the impact of Rizal’s novels, which criticized the authority of the 
+                    Catholic Church.
+                    7:12- 8:03</p>
+                  <p>3. In the film, Josephine Bracken is portrayed in different ways, reflecting the 
+                    uncertainty surrounding her relationship with Rizal. Their love story began when 
+                    Josephine and her father sought Rizal’s medical help. Rizal loved her, but they were 
+                    unable to marry because the Catholic Church refused to approve their wedding 
+                    unless Rizal retracted his beliefs, which he did not do. The film also shows that 
+                    Rizal’s family, including his sisters, did not fully approve of Josephine. They looked 
+                    down on her and even called her disgraceful. Some of them also suspected that she 
+                    might have been a spy for the friars. However, the film does not confirm this as fact, 
+                    instead leaving it open to interpretation.
+                    36:50- 44:15</p>
+                  <p>4. Based on the documents shown in the film, the filmmakers argue that no one would 
+                    believe Padre Balaguer’s claim that Rizal retracted not even Rizal’s own family. This is 
+                    supported by an interview with Trining (Trinidad Rizal) in 1922, where she stated that 
+                    the retraction was a deception (panlilinlang) and a lie (kasinungalingan) about their 
+                    deceased brother. The Church, however, claimed that the original document was lost 
+                    and later said it had been misplaced. In 1933, a Spanish priest allegedly discovered 
+                    the retraction document in the archives under Contra la Masonería: Los Documentos 
+                    de Retractación, which contained records of Filipino Masons and nationalists who had 
+                    returned to the Church.
+                    In 1949, two years before she died, Trinidad gave another interview that 
+                    contradicted her statement from 1922. However, the film suggests that this later 
+                    testimony should not be fully trusted because she was already old and forgetful 
+                    (ulyanin) and did not even remember giving an interview in 1922. The only account 
+                    that Rizal’s family fully accepted was Trinidad’s 1935 interview, in which she 
+                    confirmed that she and Rizal spoke before his execution. She also mentioned that 
+                    Rizal entrusted her with the Cocinilla de Alcohol, which contained his final poem.
+                    55:50- 1:00:05</p>
+                  <p>5. On December 30, 1896, at 7:03 in the morning, José Rizal was executed by a Filipino 
+                    firing squad. The film presents two versions of his execution, each depicting him 
+                    differently:
+                    • The Retraction Version – In this portrayal, Rizal allegedly confessed 
+                    (nangumpisal) and took communion (nangumunyon) before his death. This 
+                    suggests that he returned to the Catholic Church and accepted his fate 
+                    peacefully. This version aligns with the Church’s claim that Rizal retracted his 
+                    anti-Catholic beliefs before his execution. Because of this, he is portrayed as 
+                    calm, dying with his back turned, as was customary for traitors.
+                    • The Martyrdom Version – In contrast, this version depicts Rizal as 
+                    unwavering in his beliefs, refusing to retract his writings and standing firm in 
+                    his principles. Here, he is seen as a martyr who died for his country, 
+                    reinforcing his status as a national hero. In this version, he turns to face the 
+                    sky before falling, symbolizing his defiance and heroism.
+                    These differences raise an important question. Was Rizal a hero who was honored 
+                    by Christians, or was he a hero who was persecuted until his final breath? The film 
+                    leaves this question open-ended, allowing the audience to decide which version of 
+                    history they believe.
+                    1:04:34 – 1:05:35</p>
+                  <p>6. One of the characters challenges Rizal’s heroism by questioning whether he truly 
+                    stood by his principles until the end. If Rizal did retract before his execution, what 
+                    does that mean for everything he wrote in his novels? Did he suddenly take back his 
+                    beliefs out of fear of death (nabakla siya nung malamang mamamatay siya) or 
+                    simply because he wanted to marry Josephine Bracken? However, the film also 
+                    presents Paciano Rizal’s statement from 1892, where he claimed that José Rizal had 
+                    already accepted the possibility of martyrdom and was fully committed to his 
+                    cause. This counters the idea that Rizal would have given up his beliefs at the last 
+                    moment.
+                    1:02:10- 1:04:32</p>
+                  <p>7. The film explores Rizal’s religious beliefs through multiple perspectives. Padre 
+                    Balaguer, who claimed to be an eyewitness, asserted that Rizal returned to the 
+                    Catholic faith before his execution. According to him, Rizal repented, confessed 
+                    multiple times, received communion, wrote a retraction document, and even 
+                    married Josephine Bracken on the morning of December 30, 1896. He also 
+                    mentioned that Rizal had carved the Sagrado Corazón de Jesús during his student 
+                    years and allegedly requested it before his execution as a sign of renewed faith.
+                    However, the film questions the validity of these claims. Rizal’s family never 
+                    acknowledged the retraction, and interviews with his sister contradicted Balaguer’s 
+                    account. Some historians in the film argue that the retraction document could have 
+                    been fabricated by the Church to protect its reputation and diminish Rizal’s 
+                    revolutionary influence.
+                    Ultimately, the film does not confirm whether Rizal truly retracted or remained 
+                    steadfast in his beliefs. Instead, it leaves the question open for debate, emphasizing 
+                    the complexity of Rizal’s personal stance on faith and religion.
+                    1:05:45- 1:15:45</p>
+                  <p>8. The film’s use of fictionalized conversations with Rizal is an effective storytelling 
+                    technique because it challenges the audience to think critically. One of the most 
+                    memorable lines from Rizal in the movie is:
+                    “Mababago ko ba ang ginawa ko sa loob ng maikling buhay kung sinulat ko ang 
+                    dokumentong iyon?”
+                    This line forces the audience to question whether Rizal truly retracted. Another 
+                    powerful moment is when Rizal, appearing disheveled and smoking, is confronted 
+                    by the filmmakers, who ask why he looks so unkempt. His response, spoken with 
+                    frustration, is:
+                    “Hindi ako si Rizal. Ako’y kathang-isip niyo lamang para magkaroon ng saysay ang 
+                    inyong ginagawang pelikula!”
+                    This moment emphasizes that Rizal’s story is shaped by different interpretations, 
+                    not absolute truth. The film also highlights this theme through Rizal’s reflection on 
+                    how people remember him:
+                    “Nabasa niyo na ang halos lahat ng aking mga isinulat, halos lahat ng naisulat 
+                    tungkol sa akin, ngunit hindi niyo pa rin ako nakilala… Sana sinunod niyo ang sinulat 
+                    ko sa aking pamilya—‘Ilibing niyo ako sa lupa, lagyan niyo ng bato at krus sa ibabaw, 
+                    ilagay niyo ang aking pangalan, ang araw ng aking kapanganakan, ang araw ng aking 
+                    kamatayan… wala nang iba pa!’”
+                    This line questions how people, including historians and filmmakers, shape Rizal’s 
+                    legacy based on their interpretations rather than his true self. The film does not 
+                    provide a definitive answer about Rizal but instead urges the audience to reflect on 
+                    history, memory, and truth.
+                    Through these fictionalized dialogues, the film challenges traditional narratives, 
+                    inviting the audience to reconsider how we define heroism and historical truth. By 
+                    presenting Rizal as both a historical figure and a creation of interpretation, the film 
+                    leaves viewers questioning whether they truly know the national hero or only the 
+                    version that history has shaped.
+                    1:22:50- 1:28:31
+                    </p>
+                  <p>9. The filmmakers express frustration because there is no definitive answer to their central 
+                    question: Did Rizal truly write a retraction? They struggle with the many inconsistencies, 
+                    missing details, and contradictions in historical accounts. They also express that Rizal’s 
+                    story does not fit the structure of a typical movie because there are too many gaps, 
+                    uncertainties, and speculations that lack clear resolutions. This frustration highlights how 
+                    history is often ambiguous and shaped by different interpretations rather than absolute 
+                    facts.
+                    1:25:42 - 1:28:52
+                    </p>
+                  <p>10. That Rizal will remain Rizal and a national hero, but how he is remembered depends 
+                    on who is telling his story. The film suggests that Rizal’s legacy is not set in stone it is 
+                    constantly being interpreted and reinterpreted based on different perspectives, 
+                    beliefs, and agendas. His image as a hero, a writer, and a revolutionary has been 
+                    shaped by history, but the truth about him remains elusive.
+                    The filmmakers acknowledge that, despite the uncertainties surrounding his life his 
+                    retraction, his religious beliefs, and even his final moment his influence on 
+                    Philippine identity and nationalism is undeniable. Rizal inspired the revolution not 
+                    with violence, but with his words, ideas, and intellectual resistance. His story 
+                    continues to shape how Filipinos view patriotism, freedom, and the power of critical 
+                    thinking.
+                    In the end, the film does not attempt to give a final answer about who Rizal truly was 
+                    but instead leaves it up to the audience to reflect on his legacy and its relevance in 
+                    modern society.
+                    1:28:38- 1:29:18</p>
+              </div>
+              <div id="member3" class="section">
+                  <h2>JhonFuole Maneje</h2>
+                  <p>1. The challenge for the fillmaker is what will happen to the current generation of young people who do not yet know the true life of Jose Rizal (1:22:15)</p>
+                  <p>2. Rizal had long been a critic of the Catholic Church and Spanish rule, making a retraction inconsistent with his known (45:50)</p>
+                  <p>3. (Intelligent and strong)Though not much is documented about her intellectual life, Josephine is often portrayed as intelligent, and (Loving companion)She is shown as a caring companion who stands by him despite the social and political turmoil.</p>
+                  <p>4. Official Records and Testimony of Witnesses: Some historians and supporters of the retraction theory release documents and testimonies from witnesses, such as priests and Spanish government officials, who claim that Rizal signed a retraction before he was shot.That's why many are confused about whether the testimony is true or if the person who produced the fillmaker is wrong.</p>
+                  <p>5. There are films depicting the scene of Rizal's execution at Luneta (or Bagumbayan) that show in detail Rizal's last moments—from the preparations for the execution to his desires and stance before the authorities or 
+
+                    more brutal scenes, with details of physical torture, such as the depiction of Spanish soldiers disregarding his dignity.</p>
+                  <p>6. Inactive Participation in the Revolution: Rizal did not actively participate in armed struggles or revolution and Rizal has focused on reforms and not on radical steps to achieve independence. (50:35)</p>
+                  <p>7. In the film, Rizal is critical of the abuses and cruelty of members of the Catholic Church, particularly the friars, who conspired with the Spanish government to exploit the Filipinos. Several scenes show him objecting to the powerful influence of the Church in the lives of Filipinos, especially in matters of human rights and justice and That's why Rizal was still in the Catholic religion because of the ugly appearance of this. (1:14:25)</p>
+                  <p>8. It makes us understand every detail more. That's the style they used to make the fillms and narrate the Life of Jose Rizal so that we can understand more clearly what his life was like back then.  (1:30:15)</p>
+                  <p>9. They have difficulty finding a clear and accurate story due to rumors, this, and various versions of his life and contributions to Philippine history. 
+
+                    Disagreements over details and opinions regarding his character and activities caused confusion and difficulty in making the film 
+                    
+                    (1:32:55)</p>
+                  <p>10. They illustrate that Rizal's values—such as patriotism, education, and human rights—are not just ideas from the past, but principles that must continue to be lived and fought for in the present. Despite the changes in society, Rizal's legacy continues to guide Filipinos to strive for a more just and prosperous nation. (1:33:50)</p>
+              </div>
+          </div>
+    </div>
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+    const links = document.querySelectorAll(".sidebar ul li a");
+    const sections = document.querySelectorAll(".section");
+    const carouselImages = document.querySelectorAll(".carousel img");
+    let currentIndex = 0;
+
+    // Function to reset all sections
+    function resetSections() {
+        sections.forEach(section => {
+            section.classList.remove("active");  // Hide all sections
+            section.scrollTop = 0;  // Reset scroll position to the top
+        });
+    }
+
+    // Sidebar click event
+    links.forEach((link, index) => {
+        link.addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent page reload
+            
+            resetSections(); // Hide all sections and reset scroll
+
+            // Show the selected section
+            sections[index].classList.add("active");
+        });
+    });
+
+    // Function to show the next image in the carousel
+    function showNextImage() {
+        carouselImages[currentIndex].classList.remove("active"); // Hide current image
+        currentIndex = (currentIndex + 1) % carouselImages.length; // Move to next image
+        carouselImages[currentIndex].classList.add("active"); // Show new image
+    }
+
+    // Start the carousel (change image every 3 seconds)
+    if (carouselImages.length > 0) {
+        carouselImages[0].classList.add("active"); // Ensure the first image is shown
+        setInterval(showNextImage, 3000); // Change every 3 seconds
+    }
+});
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+/* General Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 250px;
+    background: #333;
+    padding: 20px;
+    height: 100vh;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    background: #444;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.sidebar ul li a:hover {
+    background: #555;
+}
+
+/* Content Area */
+.content {
+    flex-grow: 1;
+    padding: 40px;
+    text-align: center;
+}
+
+/* Video Container */
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+iframe {
+    width: 60%;
+    height: 315px;
+}
+
+/* Summary Text */
+.summary {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* Answer Sections (Hidden by Default) */
+.answer {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Carousel */
+.carousel {
+    position: relative;
+    max-width: 600px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.carousel-images {
+    
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    width: 600px;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Navigation Buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
